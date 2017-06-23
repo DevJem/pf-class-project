@@ -1,0 +1,13 @@
+set up new flowplayer and amazon accounts using my school email
+retrieved amazon access key and secret key
+made a new folder ~/.aws and created ~/.aws/credentials and ~/.aws/config
+credentials:
+	[default]
+	aws_access_key_id = YOUR_KEY
+	aws_secret_access_key = YOUR_SECRET
+config:
+	[default]
+	region=us-east-1
+installed pip3 library (sudo apt install python3-pip)
+installed boto3 (pip3 install boto3)
+set up s3: s3 = boto3.resource('s3', config=Config(signature_version='s3v4'))
